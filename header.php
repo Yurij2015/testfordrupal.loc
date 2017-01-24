@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>SoftGroup</title>
 </head>
-<body>
-<header>
-    <nav>
-
+<body class="container">
+<header class="container">
+    <img src="images/logosoftgroup.png" alt="">
+    <nav class="container">
+        Menu
     </nav>
 </header>
 

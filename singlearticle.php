@@ -1,6 +1,6 @@
 <?php include "session.php" ?>
 <?php include "header.php" ?>
-    <article>
+    <article class="col-lg-8">
         <?php
         $id = $_GET['id'];
         $select = $dbh->query("SELECT id, category, tiser, article, date, status, articlename FROM testsfdrupal.article WHERE id = $id");
