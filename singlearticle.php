@@ -1,5 +1,6 @@
 <?php include "session.php" ?>
 <?php include "header.php" ?>
+<?php include "sidebar.php" ?>
     <article class="col-lg-8">
         <?php
         $id = $_GET['id'];
@@ -28,5 +29,5 @@
         }
         ?>
     </article>
-<?php include "sidebar.php" ?>
+
 <?php include "footer.php" ?>
