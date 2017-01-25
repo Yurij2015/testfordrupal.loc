@@ -2,8 +2,7 @@
     <?php
     include "pagination.php";
     $i = 0;
-    //    $select = $dbh->query("SELECT id, category, tiser, date, status, articlename FROM testsfdrupal.article WHERE status = 1 AND id BETWEEN '$a' AND '$b' ORDER BY date");
-    $select = $dbh->query("SELECT id, category, tiser, date, status, articlename FROM testsfdrupal.article WHERE status = 1 LIMIT $a,10");
+    $select = $dbh->query("SELECT id, category, tiser, date, status, articlename FROM testsfdrupal.article WHERE status = 1 LIMIT {$a},10");
     // отримуємо статті
     foreach ($select as $article) {
         echo "<hr>";
@@ -20,7 +19,8 @@
         echo "<br>";
         echo $article['date'];
         echo "<br>";
-        echo $article['status'];
+//      echo $article['status'];
+        echo "Статус: Опубліковано!";
         $i++;
     }
     if ($i == 0) {

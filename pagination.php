@@ -44,4 +44,3 @@ switch ($pagination) {
         $a = 20;
         break;
 }
-

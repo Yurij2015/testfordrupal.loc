@@ -19,7 +19,12 @@
             echo "<br>";
             echo $article['date'];
             echo "<br>";
-            echo $article['status'];
+//            echo $article['status'];
+            echo "Статус: Опубліковано!";
+            echo "<br>";
+            echo "<a href = editarticle.php?id=$id>";
+            echo "Редагувати статтю";
+            echo "</a>";
         }
         ?>
     </article>
