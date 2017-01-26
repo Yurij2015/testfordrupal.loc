@@ -12,10 +12,16 @@
     <title>SoftGroup</title>
 </head>
 <body class="container">
-<header class="container">
+<header>
     <img src="images/logosoftgroup.png" alt="">
-    <nav class="container">
-        Menu
+    <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="index.php"">Головна сторінка</a></li>
+                <li><a href="contacts.php">Контакти</a></li>
+                <li><a href="addarticle.php">Додати статтю</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 

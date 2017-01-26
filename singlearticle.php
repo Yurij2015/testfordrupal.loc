@@ -5,12 +5,13 @@
         <?php
         $id = $_GET['id'];
         $select = $dbh->query("SELECT id, category, tiser, article, date, status, articlename FROM testsfdrupal.article WHERE id = $id");
-
         foreach ($select as $article) {
             echo "<hr>";
-            echo $article['id'];
-            echo "<br>";
+//            echo $article['id'];
+//            echo "<br>";
+            echo "<h3>";
             echo $article['articlename'];
+            echo "</h3>";
             echo "<br>";
             echo $article['category'];
             echo "<br>";
@@ -29,5 +30,4 @@
         }
         ?>
     </article>
-
 <?php include "footer.php" ?>

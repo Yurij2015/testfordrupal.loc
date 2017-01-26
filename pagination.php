@@ -5,8 +5,8 @@ $counts = $dbh->query("SELECT COUNT('id') FROM testsfdrupal.article WHERE status
 foreach ($counts as $count) {
     $rowcount = $count;
 }
-echo "Кількість записів з відповідними параметрами в БД: ";
-echo $rowcount;
+//echo "Кількість записів з відповідними параметрами в БД: ";
+//echo $rowcount;
 // приймаємо параметр із адресної строки
 $pagination = $_GET['pagination'];
 //задаємо параметр якщо пустий для відображення на головній сторінці
@@ -15,7 +15,7 @@ if (empty($pagination)) {
 }
 //умови для відображення пагінації
 if ($rowcount > 0) {
-    echo "<hr>";
+//    echo "<hr>";
     echo "<a href = index.php?pagination=1>";
     echo "1 - 10";
     echo "</a>";

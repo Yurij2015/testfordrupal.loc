@@ -22,3 +22,73 @@ html, body {
     padding-left: 10px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li a {
+    color: #0a52ac;
+}
+
+ul li a:hover {
+    color: #2a289a;
+    text-decoration: none;
+}
+
+.menu {
+    background: #cdcdcd;
+    border: 1px solid #aaaaaa;
+    border-right: none;
+    border-left: none;
+    margin-top: 10px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 5px 30px;
+}
+
+.menu ul li a {
+    color: #14134b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #0a52ac;
+}
+.pagination{
+    margin-top: 20px;
+}
+header{
+    margin-top: 10px;
+}
+
+.col-lg-8{
+    min-height: calc(80vh - 40px);
+}
+
+form{
+margin-top: 20px;
+text-align: center;
+}
+
+input {
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
