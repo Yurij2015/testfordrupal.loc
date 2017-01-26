@@ -8,7 +8,7 @@ if (isset($_POST)) {
     $article = trim(htmlspecialchars($_POST['article']));
     $status = $_POST['status'];
 
-    $insert = $dbh->prepare("INSERT INTO testsfdrupal.article (category, tiser, article, status, articlename) VALUES (:category, :tiser, :article, :status, :articlename)");
+    $insert = $dbh->prepare("INSERT INTO article (category, tiser, article, status, articlename) VALUES (:category, :tiser, :article, :status, :articlename)");
     $insert->bindParam(':articlename', $articlename);
     $insert->bindParam(':category', $category);
     $insert->bindParam(':tiser', $tiser);

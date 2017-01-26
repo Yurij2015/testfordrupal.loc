@@ -5,8 +5,8 @@
         <li><a href="addarticle.php" class="list-group-item">Додати статтю</a></li>
     </ul>
     <hr>
-    <p>Украина, 33000, Ровно</p>
-    <p>пл.Независимости, 3 оф. 418</p>
+    <p>Україна, 33000, Рівне</p>
+    <p>пл.Незалежності, 3 оф. 418</p>
     <p>Tel: +38-0362-450-044
     <p>
     <p>web: <a href="https://www.softgroup.ua">https://www.softgroup.ua</a></p>

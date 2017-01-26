@@ -1,5 +1,5 @@
 <?php $id = $_GET['id'];
-$select = $dbh->query("SELECT id, category, tiser, article, date, status, articlename FROM testsfdrupal.article WHERE id = $id");
+$select = $dbh->query("SELECT id, category, tiser, article, date, status, articlename FROM article WHERE id = $id");
 foreach ($select as $article) {
     $id = $article['id'];
     $articlename = $article['articlename'];

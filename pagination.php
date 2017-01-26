@@ -1,6 +1,6 @@
 <?php
 $rowcount = 0;
-$counts = $dbh->query("SELECT COUNT('id') FROM testsfdrupal.article WHERE status = 1")->fetch(PDO::FETCH_ASSOC);
+$counts = $dbh->query("SELECT COUNT('id') FROM article WHERE status = 1")->fetch(PDO::FETCH_ASSOC);
 //рахуємо кількість записів в БД
 foreach ($counts as $count) {
     $rowcount = $count;

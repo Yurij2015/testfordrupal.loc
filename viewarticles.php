@@ -1,10 +1,9 @@
 <article class="col-lg-8">
     <div class="pagination">
         <?php
-        include "pagination.php";
-
+        include "./pagination.php";
         $i = 0;
-        $select = $dbh->query("SELECT id, category, tiser, date, status, articlename FROM testsfdrupal.article WHERE status = 1 LIMIT {$a},10");
+        $select = $dbh->query("SELECT id, category, tiser, date, status, articlename FROM article WHERE status = 1 LIMIT {$a},10");
         // отримуємо статті
         foreach ($select as $article) {
             echo "<hr>";

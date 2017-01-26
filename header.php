@@ -13,7 +13,7 @@
 </head>
 <body class="container">
 <header>
-    <img src="images/logosoftgroup.png" alt="">
+    <img src="images/logosoftgroup.png" alt="Компанія SoftGroup">
     <nav>
         <div class="menu">
             <ul>

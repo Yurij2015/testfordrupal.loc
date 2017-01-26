@@ -4,7 +4,7 @@
     <article class="col-lg-8">
         <?php
         $id = $_GET['id'];
-        $select = $dbh->query("SELECT id, category, tiser, article, date, status, articlename FROM testsfdrupal.article WHERE id = $id");
+        $select = $dbh->query("SELECT id, category, tiser, article, date, status, articlename FROM article WHERE id = $id");
         foreach ($select as $article) {
             echo "<hr>";
 //            echo $article['id'];
@@ -12,21 +12,27 @@
             echo "<h3>";
             echo $article['articlename'];
             echo "</h3>";
-            echo "<br>";
+            echo "<p>";
             echo $article['category'];
-            echo "<br>";
+            echo "</p>";
+            echo "<p>";
             echo $article['tiser'];
-            echo "<br>";
+            echo "</p>";
+            echo "<p>";
             echo $article['article'];
-            echo "<br>";
+            echo "</p>";
+            echo "<p>";
             echo $article['date'];
-            echo "<br>";
+            echo "</p>";
+            echo "<p>";
 //            echo $article['status'];
             echo "Статус: Опубліковано!";
-            echo "<br>";
+            echo "</p>";
+            echo "<p>";
             echo "<a href = editarticle.php?id=$id>";
             echo "Редагувати статтю";
             echo "</a>";
+            echo "</p>";
         }
         ?>
     </article>
